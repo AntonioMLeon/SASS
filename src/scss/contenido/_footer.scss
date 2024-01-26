@@ -1,0 +1,56 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+footer{
+    background-color: v.$rosa;
+    @include m.flex-nav;
+    padding: 2%;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    p{
+        color: v.$azul;
+        text-decoration:none;
+        margin-right: 150px;
+        font: {
+            size: 15px;
+            family: v.$fuenteprincipal;
+        }
+        &:hover{
+            background-color:v.$blanco;
+            color: v.$rosalogo;
+            font: {
+                weight: bold;
+            }
+        }
+    }
+    a{
+        color: v.$azul;
+        text-decoration:none;
+        margin-right: 150px;
+        font: {
+            size: 15px;
+            family: v.$fuenteprincipal;
+        }
+        &:hover{
+            background-color:v.$blanco;
+            color: v.$rosalogo;
+            font: {
+                weight: bold;
+            }
+        }
+    }
+}
+
+@media(width <= 768px){
+
+    footer{
+        p{
+            margin-right: 1cqh;
+        }
+        a{
+            margin-right: 10px;
+        }
+    }
+}

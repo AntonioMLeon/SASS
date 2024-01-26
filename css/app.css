@@ -1,0 +1,389 @@
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+header {
+  padding: 1px;
+}
+header img {
+  height: 200px;
+  float: left;
+  margin-right: 150px;
+}
+header h1 {
+  color: #e7c0f3;
+  text-align: left;
+}
+header h2 {
+  color: #e7c0f3;
+  text-align: left;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e7c0f3;
+  padding: 2%;
+  height: 20px;
+}
+header nav a {
+  color: rgb(103, 177, 219);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+header nav a:hover {
+  background-color: white;
+  color: #d275ee;
+  font-weight: bold;
+}
+@media (width <= 768px) {
+  header img {
+    display: block;
+    margin-left: 70px;
+  }
+  header h1 {
+    color: #e7c0f3;
+    text-align: center;
+  }
+  header h2 {
+    color: #e7c0f3;
+    text-align: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80px;
+  }
+  header nav a {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+aside {
+  max-width: 500px;
+  height: 200px;
+  padding-top: 100px;
+}
+
+.container {
+  flex-wrap: wrap;
+  display: flex;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .row .col-md-4 {
+  height: 300px;
+  width: 450px;
+}
+
+h3, p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weigth: bold;
+}
+
+.facebook {
+  background-color: rgb(60, 228, 130);
+}
+
+.linkedin {
+  background-color: rgb(145, 196, 226);
+}
+
+.instagram {
+  background-color: #ec4197;
+}
+
+.youtube {
+  background-color: #ee4646;
+}
+
+.twitter {
+  background-color: #a3a1a1;
+}
+
+.pinterest {
+  background-color: #f3813f;
+}
+
+aside.facebook img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.facebook img else {
+  width: 220px;
+}
+
+aside.linkedin img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.linkedin img else {
+  width: 220px;
+}
+
+aside.instagram img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.instagram img else {
+  width: 220px;
+}
+
+aside.youtube img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.youtube img else {
+  width: 220px;
+}
+
+aside.twitter img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.twitter img else {
+  width: 220px;
+}
+
+aside.pinterest img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+  width: 120px;
+}
+aside.pinterest img else {
+  width: 220px;
+}
+
+aside.sass img {
+  margin-right: 20px;
+  margin-left: 15px;
+  float: left;
+}
+aside.sass img else {
+  width: 220px;
+}
+
+@media (width <= 768px) {
+  aside {
+    max-width: 380px;
+    height: 200px;
+    padding-top: 100px;
+  }
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .row .col-md-4 {
+    height: 300px;
+    width: 375px;
+  }
+}
+aside.color1, .color2, .color3, .color4, .texto1, .texto2, .texto3, .texto4 {
+  max-width: 500px;
+  height: 50px;
+  margin: 10px;
+  padding: 10%;
+}
+
+.container2 {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 10px;
+}
+.container2 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container2 .row .col-md-4 {
+  height: 200px;
+  width: 340px;
+}
+
+.container3 {
+  height: 200px;
+}
+
+.fade1, .fade2, .fade3, .fade4 {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+}
+.fade1 aside, .fade2 aside, .fade3 aside, .fade4 aside {
+  height: 30px;
+  width: 105px;
+}
+
+.texto1 p, .texto2 p, .texto3 p, .texto4 p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto1 p b,
+.texto2 p b,
+.texto3 p b,
+.texto4 p b {
+  justify-content: flex-start;
+}
+
+.texto1 p span,
+.texto2 p span,
+.texto3 p span,
+.texto4 p span {
+  justify-content: flex-end;
+}
+
+.color1 {
+  background-color: #B22222;
+}
+
+.color2 {
+  background-color: #ADFF2F;
+}
+
+.color3 {
+  background-color: #00BFFF;
+}
+
+.color4 {
+  background-color: #8A2BE2;
+}
+
+.colorfade11 {
+  background-color: #FA8072;
+}
+
+.colorfade12 {
+  background-color: #B22222;
+}
+
+.colorfade13 {
+  background-color: #8B0000;
+}
+
+.colorfade21 {
+  background-color: #cdf78f;
+}
+
+.colorfade22 {
+  background-color: #ADFF2F;
+}
+
+.colorfade23 {
+  background-color: #6B8E23;
+}
+
+.colorfade31 {
+  background-color: #87CEEB;
+}
+
+.colorfade32 {
+  background-color: #00BFFF;
+}
+
+.colorfade33 {
+  background-color: #1E90FF;
+}
+
+.colorfade41 {
+  background-color: #9370DB;
+}
+
+.colorfade42 {
+  background-color: #8A2BE2;
+}
+
+.colorfade43 {
+  background-color: #4B0082;
+}
+
+.fadenombre {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #e7c0f3;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  color: rgb(103, 177, 219);
+  text-decoration: none;
+  margin-right: 150px;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+footer p:hover {
+  background-color: white;
+  color: #d275ee;
+  font-weight: bold;
+}
+footer a {
+  color: rgb(103, 177, 219);
+  text-decoration: none;
+  margin-right: 150px;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+footer a:hover {
+  background-color: white;
+  color: #d275ee;
+  font-weight: bold;
+}
+
+@media (width <= 768px) {
+  footer p {
+    margin-right: 1cqh;
+  }
+  footer a {
+    margin-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

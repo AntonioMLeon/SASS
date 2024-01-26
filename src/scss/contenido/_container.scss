@@ -1,0 +1,88 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+@include m.encabezados(50px);
+@include m.ajustar-contenedor;
+
+h3, p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+    font: {
+      weigth:bold;
+    }
+}
+
+.facebook{
+  @include m.asignar-color(facebook);
+}
+
+.linkedin{
+  @include m.asignar-color(linkedin);
+}
+
+.instagram{
+  @include m.asignar-color(instagram);
+}
+
+.youtube{
+  @include m.asignar-color(youtube);
+}
+
+.twitter{
+  @include m.asignar-color(twitter);
+}
+
+.pinterest{
+  @include m.asignar-color(pinterest);
+}
+
+aside.facebook{
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.linkedin{
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.instagram{
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.youtube{ 
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.twitter{ 
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.pinterest{ 
+  @include m.ajustar-imagen($logored: true);
+}
+
+aside.sass {
+  @include m.ajustar-imagen;
+}
+
+@media(width <= 768px){
+  aside{
+    max-width: 380px;
+    height: 200px;
+    padding-top: 100px;
+  }
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .col-md-4 {
+        height: 300px;
+        width: 375px;
+      }
+    }
+  }
+}
